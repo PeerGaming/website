@@ -28,72 +28,55 @@
 	<meta property="og:url" content="http://peergaming.net/" />
 	<meta property="og:description" content="Share the Fun" />
 
-	<link rel="stylesheet" type="text/css" href="vendor/normalize.css" />
-
-	<link rel="stylesheet" type="text/css" href="styles/main.css">
-	<link rel="stylesheet" type="text/css" href="styles/v3.css">
+	<link rel="stylesheet" type="text/css" href="vendor/normalize/normalize.css" />
+	<link rel="stylesheet" type="text/css" href="styles/base.css">
+	<link rel="stylesheet" type="text/css" href="styles/ribbon.css">
+	<link rel="stylesheet" type="text/css" href="styles/style.css">
 
 </head>
 <body>
 
-	<div class="container">
+	<div class="container" id="layout">
 
 
-		<div class="frame"></div>
+		<nav class="wrap menu" id="menu">
 
+			<ul class="list">
+				<li class="list-entry center docs"><a href="http://docs.peergaming.net">Docs</a></li>
+				<li class="list-entry center demos"><a href="http://demo.peergaming.net">Demos</a></li>
+				<li class="list-entry center talk"><a href="http://talk.peergaming.net">Talk</a></li>
+				<li class="list-entry center thesis"><a href="http://thesis.peergaming.net">Thesis</a></li>
+				<!-- <li class="list-entry center forum"><a href="http://forum.peergaming.nets">Forum</a></li> -->
+			</ul>
 
-		<div class="ribbon right">
-			<a href="https://github.com/PeerGaming/peergaming" class="transition">Fork on Github</a>
-		</div>
-
-
-
-
-			<div class="wrap links">
-<!--
-				<h2 class="ref"><a href="form.peergaming.net">Survey</a></h2>
-
-				<h2 class="ref"><a href="demo.peergaming.net">Demos</a></h2>
-
-				<h2 class="ref"><a href="talk.peergaming.net">Talk</a></h2>
- -->
-<!--
-				<h2>
-					<span>Demo:</span>
-
-					<span>
-						<a href="http://peergaming.dev/PeerGaming/examples/" class="button" id="button-demo">*click*</a>
-					</span>
-
-				</h2> -->
-
-			</div>
+		</nav>
 
 
 
-		<div class="wrap main">
-
-			<header>
-
-				<h1 class="headline">PeerGaming - Share the Fun</h1>
-
-				<p class="headline-sub">A Client-Side Multiplayer Framework using WebRTC</p>
+		<div class="wrap center main" id="main">
 
 
-			</header>
+			<div class="panel">
 
 
-			<div class="content cf">
+				<header>
 
-				<div class="left1">
+					<h1 class="headline">PeerGaming - Share the Fun</h1>
 
-					<div class="logo"></div>
+					<p class="headline-sub">A Client-Side Multiplayer Framework using WebRTC</p>
 
-				</div>
+				</header>
 
-				<div class="right1">
 
-					<h3 class="about">About</h3>
+
+
+				<div class="logo"></div>
+
+
+
+				<div class="content">
+
+					<h3 class="point">About</h3>
 
 					<p>
 						With the rising of <a src="https://developer.mozilla.org/en-US/docs/WebRTC">WebRTC</a>,
@@ -102,36 +85,68 @@
 						communication with other players.
 					</p>
 
+
+					<p>PeerGaming is a Multiplayer Gaming Framework for the Web,
+					which uses standard web technologies to connect multiple Clients.
+					It allows you to create your own Multiplayer Game,
+					without concerning an additional setup like a server (*).</p>
+
+					<p class="annotation">
+						* an example for the initial process of bootstraping &amp; brookering will be be provided
+					</p>
+
+					<h3 class="point">Current</h3>
+
+					<p>
+						To improve the framework and learn more about the interest in browser based games - I would appreciate if you could help me and fill out <a class="survey" href="http://form.peergaming.net">this survey</a> to provide some feedback.
+					</p>
+
 				</div>
 
 			</div>
 
-			<div>
-
-				<h2 class="ref"><a href="http://form.peergaming.net">Survey</a> <span> - feedback for the project & web gaming</span></h2>
-
-				<h2 class="ref"><a href="http://demo.peergaming.net">Demos</a> <span>- examples for using PeerGaming</span></h2>
-
-				<h2 class="ref"><a href="http://talk.peergaming.net/slides/#!/pg/@1">Talk</a> <span class="temp-fix">- presentation material</span></h2>
+		</div>
 
 
-			<!-- 	PeerGaming is a Multiplayer Gaming Framework for the Web,
-				which uses standard web technologies to connect multiple Clients.
-				It allows you to create your own Multiplayer Game,
-				without concerning an additional setup like a server (*).
 
-				<p class="annotation">
-					* an example for the initial process of bootstraping &amp; brookering will be be provided
-				</p> -->
+
+		<div class="wrap balance" id="balance">
+
+			<div class="ribbon right">
+				<a href="https://github.com/PeerGaming/peergaming" class="transition">Fork on Github</a>
+			</div>
+
+			<div class="center">
+
+				<div class="downloads">
+
+					<div>
+						<h3>Latest Release<br>
+
+							<a href="https://github.com/PeerGaming/peergaming/blob/master/HISTORY.md">0.4.1</a></h3>
+						(2013-06-01)
+					</div>
+
+					<br>
+					<h3>Download</h3>
+
+					<p>
+						<a href="https://raw.github.com/PeerGaming/peergaming/master/dist/peergaming.min.js" download="peergaming.min.js">Minified</a><br>
+						<i>Production: 20kb</i>
+					</p>
+
+					<p>
+						<a href="https://raw.github.com/PeerGaming/peergaming/master/dist/peergaming.js" download="peergaming.js">Uncompressed</a><br>
+						<i>Development: 60kb</i>
+					</p>
+
+				</div>
+
 			</div>
 
 		</div>
 
-		<div class="frame"></div>
-
 	</div>
-
-	<script src="scripts/ui.js"></script>
 
 </body>
 </html>
