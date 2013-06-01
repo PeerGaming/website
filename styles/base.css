@@ -1,232 +1,246 @@
+
 /* Size + Units */
 /*= @group State
 ---------------------------------------------------------------------- */
-/* line 47, scss/mixins/_color.scss */
-.center {
+/* line 47, scss/mixins/_form.scss */
+.center, .main {
   margin: 0 auto;
   display: block;
-  vertical-align: middle;
-  text-align: center;
 }
 
-/*= @group Frame
----------------------------------------------------------------------- */
-/* line 4, scss/module/_frame.scss */
-ul {
-  vertical-align: baseline;
-  list-style: none;
-}
-/* line 10, scss/module/_frame.scss */
-ul.line {
-  border: 0;
-  margin: 0;
-  padding: 0;
-}
-/* line 16, scss/module/_frame.scss */
-ul.line > li {
-  display: inline;
+/* line 3, scss/mixins/_helper.scss */
+.visible {
+  display: block;
 }
 
-/* line 4, scss/module/_misc.scss */
+/* line 4, scss/mixins/_helper.scss */
+.hidden {
+  display: none;
+}
+
+/* line 3, scss/mixins/_grid.scss */
+.c-100 {
+  width: 100%;
+}
+
+/* line 4, scss/mixins/_grid.scss */
+.c-90 {
+  width: 90%;
+}
+
+/* line 5, scss/mixins/_grid.scss */
+.c-85 {
+  width: 85%;
+}
+
+/* line 6, scss/mixins/_grid.scss */
+.c-80 {
+  width: 80%;
+}
+
+/* line 7, scss/mixins/_grid.scss */
+.c-75 {
+  width: 75%;
+}
+
+/* line 8, scss/mixins/_grid.scss */
+.c-70 {
+  width: 70%;
+}
+
+/* line 9, scss/mixins/_grid.scss */
+.c-60 {
+  width: 60%;
+}
+
+/* line 10, scss/mixins/_grid.scss */
+.c-50 {
+  width: 50%;
+}
+
+/* line 11, scss/mixins/_grid.scss */
+.c-40 {
+  width: 40%;
+}
+
+/* line 12, scss/mixins/_grid.scss */
+.c-30 {
+  width: 30%;
+}
+
+/* line 13, scss/mixins/_grid.scss */
+.c-25 {
+  width: 25%;
+}
+
+/* line 14, scss/mixins/_grid.scss */
+.c-20 {
+  width: 20%;
+}
+
+/* line 15, scss/mixins/_grid.scss */
+.c-15 {
+  width: 15%;
+}
+
+/* line 16, scss/mixins/_grid.scss */
+.c-10 {
+  width: 10%;
+}
+
+/* line 17, scss/mixins/_grid.scss */
+.flex {
+  width: auto;
+}
+
+/* line 19, scss/mixins/_grid.scss */
+.mb-10 {
+  margin-bottom: 10px;
+}
+
+/* line 20, scss/mixins/_grid.scss */
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+/* line 21, scss/mixins/_grid.scss */
+.mt-10 {
+  margin-top: 10px;
+}
+
+/* line 22, scss/mixins/_grid.scss */
+.mt-20 {
+  margin-top: 20px;
+}
+
+/* line 23, scss/mixins/_grid.scss */
+.ml-10 {
+  margin-left: 10px;
+}
+
+/* line 24, scss/mixins/_grid.scss */
+.ml-20 {
+  margin-left: 20px;
+}
+
+/* line 25, scss/mixins/_grid.scss */
+.mr-10 {
+  margin-right: 10px;
+}
+
+/* line 26, scss/mixins/_grid.scss */
+.mr-20 {
+  margin-right: 20px;
+}
+
+/* line 4, scss/mixins/_layout.scss */
 .wrap {
   *zoom: 1;
   position: relative;
   width: 100%;
 }
-/* line 39, scss/mixins/_color.scss */
+/* line 39, scss/mixins/_form.scss */
 .wrap:before, .wrap:after {
   content: "";
   display: table;
 }
-/* line 40, scss/mixins/_color.scss */
+/* line 40, scss/mixins/_form.scss */
 .wrap:after {
   clear: both;
 }
 
-/* line 13, scss/module/_misc.scss */
+/* line 13, scss/mixins/_layout.scss */
 .left {
   float: left;
   *zoom: 1;
 }
-/* line 39, scss/mixins/_color.scss */
+/* line 39, scss/mixins/_form.scss */
 .left:before, .left:after {
   content: "";
   display: table;
 }
-/* line 40, scss/mixins/_color.scss */
+/* line 40, scss/mixins/_form.scss */
 .left:after {
   clear: both;
 }
 
-/* line 14, scss/module/_misc.scss */
+/* line 14, scss/mixins/_layout.scss */
 .right {
   float: right;
   *zoom: 1;
 }
-/* line 39, scss/mixins/_color.scss */
+/* line 39, scss/mixins/_form.scss */
 .right:before, .right:after {
   content: "";
   display: table;
 }
-/* line 40, scss/mixins/_color.scss */
+/* line 40, scss/mixins/_form.scss */
 .right:after {
   clear: both;
 }
 
-/* line 20, scss/module/_misc.scss */
-.c-100 {
-  width: 100%;
+/* line 2, scss/mixins/_gradient.scss */
+.shadow-left {
+  -webkit-box-shadow: 0px -2px 3px #747474;
+  -moz-box-shadow: 0px -2px 3px #747474;
+  box-shadow: 0px -2px 3px #747474;
 }
 
-/* line 21, scss/module/_misc.scss */
-.c-90 {
-  width: 90%;
+/* line 9, scss/mixins/_gradient.scss */
+.shadow-right {
+  -webkit-box-shadow: 0px 2px 3px #747474;
+  -moz-box-shadow: 0px 2px 3px #747474;
+  box-shadow: 0px 2px 3px #747474;
 }
 
-/* line 22, scss/module/_misc.scss */
-.c-85 {
-  width: 85%;
-}
-
-/* line 23, scss/module/_misc.scss */
-.c-80 {
-  width: 80%;
-}
-
-/* line 24, scss/module/_misc.scss */
-.c-75 {
-  width: 75%;
-}
-
-/* line 25, scss/module/_misc.scss */
-.c-70 {
-  width: 70%;
-}
-
-/* line 26, scss/module/_misc.scss */
-.c-60 {
-  width: 60%;
-}
-
-/* line 27, scss/module/_misc.scss */
-.c-50 {
-  width: 50%;
-}
-
-/* line 28, scss/module/_misc.scss */
-.c-40 {
-  width: 40%;
-}
-
-/* line 29, scss/module/_misc.scss */
-.c-30 {
-  width: 30%;
-}
-
-/* line 30, scss/module/_misc.scss */
-.c-25 {
-  width: 25%;
-}
-
-/* line 31, scss/module/_misc.scss */
-.c-20 {
-  width: 20%;
-}
-
-/* line 32, scss/module/_misc.scss */
-.c-15 {
-  width: 15%;
-}
-
-/* line 33, scss/module/_misc.scss */
-.c-10 {
-  width: 10%;
-}
-
-/* line 34, scss/module/_misc.scss */
-.flex {
-  width: auto;
-}
-
-/* line 36, scss/module/_misc.scss */
-.mb-10 {
-  margin-bottom: 10px;
-}
-
-/* line 37, scss/module/_misc.scss */
-.mb-20 {
-  margin-bottom: 20px;
-}
-
-/* line 38, scss/module/_misc.scss */
-.mt-10 {
-  margin-top: 10px;
-}
-
-/* line 39, scss/module/_misc.scss */
-.mt-20 {
-  margin-top: 20px;
-}
-
-/* line 40, scss/module/_misc.scss */
-.ml-10 {
-  margin-left: 10px;
-}
-
-/* line 41, scss/module/_misc.scss */
-.ml-20 {
-  margin-left: 20px;
-}
-
-/* line 42, scss/module/_misc.scss */
-.mr-10 {
-  margin-right: 10px;
-}
-
-/* line 43, scss/module/_misc.scss */
-.mr-20 {
-  margin-right: 20px;
-}
-
-/* Color Shortcuts */
-/* line 48, scss/module/_misc.scss */
-.red {
-  color: #cb4b52;
-}
-
-/* line 49, scss/module/_misc.scss */
-.grey {
-  color: #747474;
-}
-
-/* line 50, scss/module/_misc.scss */
-.yellow {
-  color: #fcde92;
-}
-
-/* line 51, scss/module/_misc.scss */
-.green {
-  color: #40ae2c;
-}
-
-/* line 52, scss/module/_misc.scss */
-.white {
-  color: #eeeeee;
-}
-
-/* 100% Height Layout (with Header & Footer) */
-/* line 85, scss/module/_misc.scss */
+/* line 5, scss/main.scss */
 html, body {
-  background-color: #2b306a;
+  margin: 0;
+  padding: 0;
+  height: 100%;
 }
 
-/* line 121, scss/module/_misc.scss */
-.hidden {
-  display: none;
+/* line 13, scss/main.scss */
+body {
+  background-color: whitesmoke;
+  font-size: 16px;
+  line-height: 24px;
+  /*font-size: 1rem;*/
+
+  font-size: 0.9rem;
+
+  line-height: 1.5rem;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  letter-spacing: 1px;
+
+  overflow-x: hidden;
+}
+/* line 32, scss/mixins/_form.scss */
+body ::selection {
+  background: #1d1d1d;
+  color: #f9dd95;
+  text-shadow: none;
+}
+/* line 33, scss/mixins/_form.scss */
+body ::-moz-selection {
+  background: #1d1d1d;
+  color: #f9dd95;
+  text-shadow: none;
 }
 
-/* line 126, scss/module/_misc.scss */
-.footer {
-  position: absolute;
-  bottom: 0;
+/* line 28, scss/main.scss */
+.container {
+  height: 100%;
+  width: 100%;
+
+  background-color: #222;
 }
+
+/* line 38, scss/main.scss */
+.frame {
+
+  height: 10%;
+  background-color: #222;
+}
+

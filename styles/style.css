@@ -1,0 +1,231 @@
+
+.simple {
+
+  list-style: none;
+}
+
+.headline {
+  text-align: center;
+  margin-top: 1em;
+  font-size: 2rem;
+}
+
+
+.transition {
+
+  -webkit-transition: all 1s ease-in-out;
+     -moz-transition: all 1s ease-in-out;
+      -ms-transition: all 1s ease-in-out;
+       -o-transition: all 1s ease-in-out;
+          transition: all 1s ease-in-out;
+}
+
+
+.point {
+
+  text-decoration: underline;
+  padding-top: 1em;
+}
+
+
+
+
+.headline-sub {
+
+  text-align: center;
+  font-size: 1rem;
+}
+
+
+.annotation {
+  font-size: 0.7rem;
+  font-style: italic;
+}
+
+
+.center {
+
+  height: 100%;
+
+  display: -webkit-flex;
+  display:    -moz-flex;
+  display:     -ms-flex;
+  display:         flex;
+
+  -webkit-flex-direction: column;
+     -moz-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+
+  -webkit-justify-content: center;
+     -moz-justify-content: center;
+      -ms-justify-content: center;
+          justify-content: center;
+
+
+  text-align: center;
+}
+
+
+.menu {
+
+
+  width       : 10%;
+
+
+
+  /*margin-left : -150px;*/
+/*
+  margin-left: -10%;
+  left: 10%;
+*/
+
+  position    : fixed;
+  top         : 0;
+  /*left        : 150px;*/
+  bottom      : 0;
+  z-index     : 1000;
+  /*background  : #222;*/
+  /*#191818;*/
+
+  overflow-y: auto;
+}
+
+
+
+
+.menu-entry {
+
+  color: #999;
+  border: none;
+  white-space: normal;
+  padding: 0.6em 0 0.6em 0.6em;
+}
+
+
+.list {
+
+  height  : 100%;
+  width   : 100%;
+
+  margin  : 0;
+  padding : 0;
+}
+
+.list-entry {
+
+  height  : 25%;
+  margin  : 0;
+  padding : 0;
+
+  opacity: 0.8;
+}
+
+.list-entry:hover {
+
+  opacity: 1;
+}
+
+.list-entry > a {
+
+  color: #333;
+  font-size: 2em;
+  text-decoration: none;
+
+  /*height: 100%;*/
+
+  display: block;
+  text-align: center;
+}
+
+
+
+
+.main {
+
+  margin: 0 auto;
+  width: 75%;
+}
+
+
+
+.docs   { background-color: #C1272D; }
+.demos  { background-color: #0071BC; }
+.talk   { background-color: #FBD13B; }
+.thesis { background-color: #009245; }
+.forum  { background-color: #F15A24; }
+
+
+.panel {
+
+  height: 90%;
+  width: 70%;
+  background: #eee;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  padding: 0 30px;
+  border-radius: 10px;
+
+  /* ribbon */
+  overflow-x: hidden;
+
+  margin: 0 auto;
+
+  margin-left: 10%;
+}
+
+.balance {
+
+  width : 15%;
+  height: 100%;
+
+  position: fixed;
+  right: 0;
+  top: 0;
+}
+
+
+.downloads {
+
+  list-style: none;
+  /*display: inline-block;*/
+
+  background-color: #eee;
+  padding: 10px;
+  border-radius: 10px;
+
+
+}
+
+
+
+
+
+/*base 64  background image */
+.logo {
+
+  width           : 200px;
+  height          : 200px;
+  position        : relative;
+
+  float         : right;
+  margin          : 20px;
+
+  background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIj48ZWxsaXBzZSBmaWxsPSIjRjE1QTI0IiBjeD0iNzEuNDMyIiBjeT0iMTQ1LjUzMiIgcng9IjQxLjYyNCIgcnk9IjM5LjExNiIvPjxlbGxpcHNlIGZpbGw9IiMwMDcxQkMiIGN4PSI1MC40MzIiIGN5PSI5Mi41MzIiIHJ4PSI0MS42MjQiIHJ5PSIzOS4xMTYiLz48cGF0aCBmaWxsPSIjQzEyNzJEIiBkPSJNMTAyLjIzOSAxMi45OTRjMjIuOTkgMCA0MS42MyAxNy41MSA0MS42MyAzOS4xMSAwIDIxLjYxLTE4LjY0IDM5LjEyLTQxLjYzIDM5LjEyLTIyLjk4OSAwLTQxLjYyLTE3LjUxLTQxLjYyLTM5LjEyIDAtMjEuNiAxOC42MzEtMzkuMTEgNDEuNjItMzkuMTF6Ii8+PGVsbGlwc2UgZmlsbD0iIzAwOTI0NSIgY3g9IjE0MC40MzIiIGN5PSIxNDUuNTMyIiByeD0iNDEuNjI0IiByeT0iMzkuMTE2Ii8+PGVsbGlwc2UgZmlsbD0iI0ZCRDEzQiIgY3g9IjE1My40MzIiIGN5PSI5Mi41MzIiIHJ4PSI0MS42MjQiIHJ5PSIzOS4xMTYiLz48ZyBzdHJva2U9IiMwMDAiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCI+PHJlY3QgeD0iNTQiIHk9IjcxLjUiIGZpbGw9IiNmZmYiIHdpZHRoPSI5NSIgaGVpZ2h0PSI3MSIvPjxwYXRoIGQ9Ik04OS4wNjEgMTM0LjVoLTIwLjExcy0zLjY0OC0zNC44OTcgOS40NzgtMzQuODk3YzEzLjExNiAwIDEwLjYzMiAzNC44OTcgMTAuNjMyIDM0Ljg5N3oiLz48Y2lyY2xlIGN4PSI3OC4zOCIgY3k9Ijg2LjQ3NiIgcj0iNy44MDEiLz48cmVjdCB4PSIxMDciIHk9IjEwMC41IiB3aWR0aD0iMzIiIGhlaWdodD0iMTAiLz48cmVjdCB4PSIxMTgiIHk9IjkwLjUiIHdpZHRoPSIxMCIgaGVpZ2h0PSIzMCIvPjxwYXRoIGQ9Ik05OS41NDggMTI3LjVoLTE2LjY3N3MtMy4wMjQtMjguOTQgNy44Ni0yOC45NGMxMC44NzcgMCA4LjgxNyAyOC45NCA4LjgxNyAyOC45NHoiLz48cGF0aCBkPSJNOTcuMTYgODguMTQ0YzAgMy41NzItMi44OTUgNi40NjktNi40NzEgNi40NjktMy41NyAwLTYuNDY4LTIuODk3LTYuNDY4LTYuNDY5IDAtMy41NzIgMi44OTctNi40NjkgNi40NjgtNi40NjkgMy41NzcgMCA2LjQ3MSAyLjg5NyA2LjQ3MSA2LjQ2OXoiLz48L2c+PC9zdmc+) no-repeat center center;
+}
+
+
+
+
+.content {
+
+  text-align: left;
+}
+
+
+.survey {
+
+  color: red;
+  /*text-decoration: underline;*/
+  font-weight: bold;
+}
